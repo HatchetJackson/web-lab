@@ -3,10 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WebUI Lab</title>
+  <title>Open WebUI Demo</title>
+  <!-- 相對路徑引入 CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Hello, Web Programming!</h1>
-  <p>這是我的第一個網頁專案。</p>
+  <div class="app-layout">
+    <!-- 側邊欄語意化標籤 -->
+    <aside class="sidebar">
+      <h3>Web Assistant</h3>
+      <p>W01-W03 Demo</p>
+    </aside>
+
+    <!-- 主要內容區語意化標籤 -->
+    <main class="chat-container">
+      <header>
+        <h2>Open WebUI Demo 介面</h2>
+      </header>
+      <section style="margin-top: 20px;">
+        <p>伺服器運作正常！歡迎找助教 Demo。</p>
+      </section>
+      <form style="margin-top: 20px;">
+        <input type="text" placeholder="請輸入訊息..." style="width: 70%; padding: 8px;">
+        <button type="button" style="padding: 8px 16px;">送出</button>
+      </form>
+    </main>
+  </div>
 </body>
 </html>
